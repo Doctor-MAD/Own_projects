@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 50px;
+            text-align: center;
+            background-color: rgb(241, 180, 180);
+            color: black;
+            display: none;
+        }
+
+        @media(max-width:300px){
+            #id-1{
+                display: block;
+            }
+        }
+        @media(max-width:500px) and (min-width:300px){
+            #id-2{
+                display: block;
+                background-color: rgb(237, 180, 241);
+            }
+        }
+        @media(max-width:800px) and (min-width:500px){
+            #id-3{
+                display: block;
+                background-color: rgb(180, 241, 224);
+            }
+        }
+        @media (min-width:800px){
+            #id-4{
+                display: block;
+                background-color: rgb(241, 228, 180);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="id-1">iPhone</div>
+    <div class="box" id="id-2">iPad</div>
+    <div class="box" id="id-3">Macbook</div>
+    <div class="box" id="id-4">Gaming Monitor</div>
+</body>
+</html>

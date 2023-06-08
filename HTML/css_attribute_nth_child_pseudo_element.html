@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute and nth child pseudo element</title>
+    <style>
+        input{
+            display: block;
+            margin: 4px;
+            padding: 4px;
+        }
+        input[type="text"]{
+            background-color: aqua;
+        }
+        input[type="submit"]{
+            background-color: lightsalmon;
+        }
+        a[target]{
+            font-size: 65px;
+            color: brown;
+            text-decoration: none;
+        }
+        li:nth-child(2){
+            background-color: rgb(205, 255, 217);
+        }
+        li:nth-child(2n+3){
+            background-color: rgb(205, 208, 255);
+        }
+        
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1> <a href="https://google.com" target="_blank">Go to Google </a> </h1>
+      <form action="" class="form-control">
+        <input type="text" placeholder="Enter Your Name" />
+        <input type="text" placeholder="Enter your Password" />
+        <input type="submit" value="Submit" />
+      </form>
+      <ul>
+        <li class="class" id="item-1">Item1</li>
+        <li class="class" id="item-2">Item2</li>
+        <li class="class" id="item-3">Item3</li>
+        <li class="class" id="item-4">Item4</li>
+        <li class="class" id="item-5">Item5</li>
+        <li class="class" id="item-6">Item6</li>
+        <li class="class" id="item-7">Item7</li>
+        <li class="class" id="item-8">Item8</li>
+        <li class="class" id="item-9">Item9</li>
+        <li class="class" id="item-10">Item10</li>
+      </ul>
+    </div>
+  </body>
+</html>

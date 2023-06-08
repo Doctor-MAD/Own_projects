@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS GRID with Media Queries</title>
+    <style>
+      .container {
+        display: grid;
+        gap: 1rem;
+        grid-template-areas:
+          "nav nav nav nav"
+          "section section section aside"
+          "footer footer footer footer";
+      }
+      nav {
+        grid-area: nav;
+      }
+      section {
+        grid-area: section;
+      }
+      aside {
+        grid-area: aside;
+      }
+      footer {
+        grid-area: footer;
+      }
+      @media (max-width: 300px) {
+        body {
+          display: block;
+          background-color: rgb(188, 190, 234);
+        }
+        .container {
+          grid-template-areas:
+            "nav nav nav nav"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+        aside {
+          display: none;
+        }
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+      @media (max-width: 500px) and (min-width: 300px) {
+        body {
+          display: block;
+          background-color: rgb(237, 180, 241);
+        }
+        .container {
+          grid-template-areas:
+            "nav nav nav nav"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+        aside {
+          display: none;
+        }
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+      @media (max-width: 800px) and (min-width: 500px) {
+        body {
+          display: block;
+          background-color: rgb(180, 241, 224);
+        }
+        .container {
+          grid-template-areas:
+            "nav nav nav nav"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+      }
+      @media (min-width: 800px) {
+        body {
+          display: block;
+          background-color: rgb(241, 228, 180);
+        }
+      }
+      .bdr {
+        border: 2px solid black;
+        padding: 10px 23px;
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="bdr">
+        <span>Home</span>
+        <span>About</span>
+        <span>Services</span>
+        <span>Contact</span>
+      </nav>
+      <section class="bdr">
+        <h2 >Learn CSS in Hindi</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex totam nulla laborum impedit, magni commodi voluptates. Aperiam cupiditate ab eligendi quod id facilis voluptate perspiciatis eos doloribus officiis! Suscipit, corporis?</p>
+      </section >
+      <aside class="bdr">
+        <h2 >More About Us</h2>
+      </aside>
+    </div>
+    <footer class="bdr">AkaDMe Technology 2023&copy</footer>
+  </body>
+</html>

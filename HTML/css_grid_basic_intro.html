@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Basic Intro</title>
+    <style>
+        .container{
+            display: grid;
+            border: 2px solid blueviolet;
+            grid-template-columns: 50% auto 30%;
+            /* grid-template-columns: 1fr 4fr 2fr; another way of divding in column */
+           grid-template-columns: repeat(4,auto); /* aa na thi auto divide thai jase 4 column ma equal distribution thi */
+           gap: 10px;
+        }
+        .item{
+            display: flex;
+            height: 100px;
+            /* width: 100px; */
+            background-color: tomato;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 3px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- div.item#item-${This is item-$}*9 -->
+      <div class="item" id="item-1">this is item-1</div>
+      <div class="item" id="item-2">this is item-2</div>
+      <div class="item" id="item-3">this is item-3</div>
+      <div class="item" id="item-4">this is item-4</div>
+      <div class="item" id="item-5">this is item-5</div>
+      <div class="item" id="item-6">this is item-6</div>
+      <div class="item" id="item-7">this is item-7</div>
+      <div class="item" id="item-8">this is item-8</div>
+      <div class="item" id="item-9">this is item-9</div>
+    </div>
+  </body>
+</html>

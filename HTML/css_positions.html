@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Postions</title>
+    <style>
+      .box {
+        border: 2px solid brown;
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        display: inline-block;
+      }
+      .container{
+        border: 2px double black;
+        height: 2000px;
+        background-color: bisque;
+      }
+      #box3{
+        /* relative position to its normal position and will leave a gap at its normal position when you wil assign some top and left or any other properties.
+        position: relative;
+        top: 400px;
+        left: 300px; */
+
+        /* Abosolute  will break normal flow and element will have its position relative to  parent element position. It will not leave any space while changing its position with the help of top,left, right, bottom properties. */
+        /* position: absolute; 
+        top: 400px;
+        left: 300px; */
+
+        /* In fixed, element position will remain same even though you scroll up/down. We use such property to build chat application within website. Position of element is relative to the browser window.
+        position: fixed;
+        right: 20px;*/
+
+        /* position sticky , element will stick to its position once you reach to that element, */
+
+        position: sticky;
+        top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"> This parent directory" <br>
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">3</div>
+      <div class="box" id="box4">4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Float and Clear</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      div > h1 {
+        margin: 15px;
+        padding: 10px;
+      }
+      div > h1,
+      div > h3 {
+        text-align: center;
+        background-color: rgba(255, 89, 0, 0.548);
+        border: 2px dotted;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        
+      }
+      body {
+        font-family: "Ubuntu", sans-serif;
+      }
+      .container {
+        border: 4px solid black;
+        width: 700px;
+        background-color: rgba(180, 255, 127, 0.43);
+        margin: 50px auto; /* auto stands for center in X axis (rows) */
+      }
+      /* .container::after {
+      content: "";
+      display: table;
+      clear: both;
+      } */
+      .container{
+        overflow: auto;
+      }
+      .left,
+      .right {
+        border: 3px solid lightseagreen;
+        margin: 10px 27px;
+        padding: 16px 5px;
+      }
+      .left {
+        float: left;
+        width: 42%;
+      }
+      .right {
+        float: right;
+        width: 42%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to my store</h1>
+      <div id="gfxcard" class="left">
+        <h3>Grpahics Card</h3>
+        <ol id="gfxcardlist" class="list">
+          <li>RTX 3060</li>
+          <li>RTX 3060TI</li>
+          <li>RTX 3070</li>
+          <li>RTX 3080</li>
+        </ol>
+      </div>
+      <div id="chips" class="left">
+        <h3>Processors</h3>
+        <ol id="chipslist" class="list">
+          <li>AMD Ryzen 5 5700</li>
+          <li>Intel i7 9600k</li>
+          <li>AMD Ryzen 7 6800</li>
+          <li>Intel i9 10600k</li>
+        </ol>
+      </div>
+      <div id="ram" class="right">
+        <h3>RAMs</h3>
+        <ol id="ramlist" class="list">
+          <li>ADATA 8GB DDR5 3600hz</li>
+          <li>Corsair 8GB DDR% 4200hz</li>
+          <li>ADATA 16GB DDR5 3600hz</li>
+          <li>Corsair 16GB DDR% 4200hz</li>
+        </ol>
+      </div>
+      <div id="monitor" class="right">
+        <h3>Monitors</h3>
+        <ol id="monitorlist" class="list">
+          <li>LG 27" 4k Gaming Monitor</li>
+          <li>Samsung 32" 4k 90Hz Gaming Monitor</li>
+          <li>MSI 38" 2k 144hz gaming Monitor</li>
+          <li>LG 49" 4k 240hz Gaming Monitor</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

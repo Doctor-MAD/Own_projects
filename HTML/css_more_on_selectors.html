@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on Selectors</title>
+    <style>
+      h1 {
+        background-color: lightpink;
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+      }
+
+      /* if p is right inside div then this CSS will be applied */
+      div > p {
+        color: yellowgreen;
+      }
+
+      /* if p is right after div p i.e. tha next sibling of div  */
+     div + p {
+        background-color: lightsalmon;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is more on selectors.</h1>
+    <div class="container">
+      <div class="row">
+        <p>This is a paragraph.</p>
+        <ul>
+          This is list under the div
+          <li><p>This is paragraph under unordered list</p></li>
+        </ul>
+      </div>
+      <p>This is another paragraph.</p>
+    </div>
+    <p>This is outer paragraph.</p>
+  </body>
+</html>

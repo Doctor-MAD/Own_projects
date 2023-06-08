@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .box{
+            display: flex;
+            background-color: lightsalmon;
+            height: 200px;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+             /*  transition-property: background-color;
+            transition-timing-function:ease-in-out;
+            transition-duration: 0.5s; */
+            /* transition: background-color transition-duration transition-timing-function transition-delay */
+            transition: all 0.5s ease-in 0.1s;
+        }
+        .box:hover{
+            background-color: lightskyblue;
+            /* opacity: 0.5; */
+            height: 400px;
+            width: 600px;
+            border-radius: 15px;
+            font-size: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3> This is CSS Transition Tutorial</h3>
+    <div class="box">
+        This is div box.
+    </div>
+</body>
+</html>

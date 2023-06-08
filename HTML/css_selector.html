@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* Element Selector */
+      p {
+        color: red;
+        border: 2px dotted blue;
+      }
+       /* ID Selector */
+      #secondPara {
+        color: blueviolet;
+      }
+      /* ID Selector */
+      #firstpara {
+        color: green;
+      }
+      /* Class Selector */
+      .greyBG {
+        background-color: lightgrey;
+      }
+      /* Class Selector */
+      .yellowBg {
+        background-color: lightyellow;
+      }
+      /* Grouping Selector */
+      footer, span {
+        color: brown;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>CSS Selectors</h3>
+    <p id="firstpara" class="greyBG">
+      This is simple paragraph to demonstrate CSS selectors.
+    </p>
+    <p id="secondPara" class="yellowBg">
+      This is another paragraph to demonstrate CSS selectors.
+    </p>
+    <span> This is Span area. </span>
+    <div>
+      <p id="thirdPara" class="greyBG">
+        This is Third paragraph to demonstrate CSS selectors.
+      </p>
+      <footer>This is &lt;footer&gt;</footer>
+    </div>
+  </body>
+</html>

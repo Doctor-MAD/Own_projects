@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box; /* Universal selector */
+            margin: 0;
+            padding: 0;
+        }
+      .container {
+        background-color: rgba(201, 245, 147, 0.413);
+        border: 2px solid navy;
+        border-radius: 50px;
+        width:700px;
+
+        /* padding/margin= top right bottom left (clockwise direction); */
+        /* padding: 20px 40px 64px 80px; */
+
+        /* padding/margin= y(top/bottom) x(left/right) */
+        padding: 25px 40px;
+
+        /* padding: 20px; */
+        /* padding-left: 20x;
+            padding-right: 20x;
+            padding-top: 20x;
+            padding-left: 20x; */
+        margin: 50px 50px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="first">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos nisi,
+        ipsam, sed temporibus minima tempore rerum consectetur aliquam similique
+        debitis nam animi at quibusdam enim exercitationem ˀaperiam nobis nemo
+        soluta! Itaque error repellat obcaecati debitis natus reprehenderit
+        numquam odio omnis reiciendis deleniti fugit, similique minima quae
+        officia libero ea dicta magni eaque earum voluptates nam ducimus
+        assumenda at deserunt? Sunt.
+      </p>
+    </div>
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="second">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos nisi,
+        ipsam, sed temporibus minima tempore rerum consectetur aliquam similique
+        debitis nam animi at quibusdam enim exercitationem ˀaperiam nobis nemo
+        soluta! Itaque error repellat obcaecati debitis natus reprehenderit
+        numquam odio omnis reiciendis deleniti fugit, similique minima quae
+        officia libero ea dicta magni eaque earum voluptates nam ducimus
+        assumenda at deserunt? Sunt.
+      </p>
+    </div>
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="third">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos nisi,
+        ipsam, sed temporibus minima tempore rerum consectetur aliquam similique
+        debitis nam animi at quibusdam enim exercitationem ˀaperiam nobis nemo
+        soluta! Itaque error repellat obcaecati debitis natus reprehenderit
+        numquam odio omnis reiciendis deleniti fugit, similique minima quae
+        officia libero ea dicta magni eaque earum voluptates nam ducimus
+        assumenda at deserunt? Sunt.
+      </p>
+    </div>
+  </body>
+</html>
