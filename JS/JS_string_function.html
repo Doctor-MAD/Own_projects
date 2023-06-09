@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Fuctions</title>
+</head>
+<body>
+    
+    <script>
+         var str= "This is a string";
+         console.log(str);
+
+         //first occurance of substring
+        var position= str.indexOf('is')
+        console.log(position)
+
+        // last occurance of any substring
+        position=str.lastIndexOf('is')
+        console.log(position)
+
+        var substr2= str.slice(1,9)
+        console.log(substr2)
+        var substr1=str.substr(1,9)
+        console.log(substr1)
+
+        var replaced= str.replace("a string", "Akash")
+        console.log(replaced) 
+        console.log(str)
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase()) 
+        var newstring=str.concat("This string is attached with the help of concat") 
+        console.log(newstring) 
+        var str_white= "   This contains       white spaces  ";
+        console.log(str_white)
+        console.log(str_white.trim())
+        console.log(str.charAt(5))
+        console.log(str.charCodeAt(5))
+
+    </script>
+
+</body>
+</html>

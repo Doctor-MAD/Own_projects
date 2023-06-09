@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Strings and String Methods</title>
+</head>
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum ullam facere nobis provident velit pariatur. At a laudantium ipsum?
+        </p>
+    </div>
+    <script>
+        var string= "first"
+        var name= "Akash"
+        var message= "A luckciest guy on earth."
+        console.log(string+name+message)
+
+        var channel="TheMADstudio"
+        var temp= `${name} is ${message} and he has youtube channel called ${channel}`
+        console.log(temp)
+        console.log(`total leng the of temp is ${temp.length}`) //we can store temp.length to variable and then add it here in console
+        
+        document.getElementById('content').innerHTML= " <h3> This HTML element is created with the help of Javascript <h3>"
+    </script>
+</body>
+</html>
