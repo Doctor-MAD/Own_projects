@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Interaction - Alert, Prompt and Confirm in Javascript</title>
+</head>
+<body>
+
+    <div class="container"> 
+        This is page.
+        <p id="name"> </p>
+    </div>
+    
+    <script>
+        // Alert in in-browser javascript
+        // alert("Work Hard bro. Your target is google.")
+
+        // let name = prompt("What is your name?", "Guest");
+        // console.log( "Good Morning, "+ name + ".Welcome to our place. Please enjoy.");
+
+        // let deletepost= confirm("Do you really want to delete this post? ");
+        // // console.log(deletepost)
+
+        // if (deletepost){
+        //     console.log("Your post is deleted successfully.");
+        // }
+        // else{
+        //     console.log("Your post is not deleted.");
+        // }
+
+        let age= prompt("Please enter your age:- ")
+
+        if (age>=18){
+           alert("You are allowed to enter the website");
+           console.log("User is greater than 18.");
+        }
+        else{
+            alert("You are minor so you are not allowed.");
+            console.log("User is not 18 years old.");
+        }
+
+       
+
+    </script>
+</body>
+</html>

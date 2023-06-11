@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops in Javascript</title>
+  </head>
+  <body>
+    <div class="container">
+        This is about loops
+    </div>
+
+    <script>
+      console.log("This is tutorial of loops.");
+
+      // let i=0;
+
+      // for (i=0; i<3;i++){
+      //     console.log(i)
+      // }
+
+      let friends = ["rohan", "sanjiv", "deepti", "pooja", "skillf"];
+
+      for (let index = 0; index < friends.length; index++) {
+        console.log("Hello" + friends[index]);
+      }
+
+      friends.forEach(function f(element) {
+        console.log("Hello" + element);
+      });
+
+      let arr = [1, 2, 3, 4, 5, 6];
+      let sum = 1;
+
+      //   arr.forEach(function sumCallback(element) {
+      //     sum += element;
+      //   });
+
+      //   console.log(sum);
+
+      for (element of arr) {
+        sum *= element;
+      }
+      console.log(sum);
+
+      let employee = {
+        name: "Akash",
+        salary: 250000,
+        work: "Software Developer",
+      };
+
+      // use this loop to iterate over objects in javascript
+      for (key in employee) {
+        console.log(`the ${key} of employee is ${employee[key]}`);
+      }
+
+      // while loop in js
+
+      let i = 0;
+      while (i < 4) {
+        console.log(`${i} is less than 4`);
+        i++;
+      }
+
+      // while loop in js
+      let j = 0;
+      do {
+        console.log(`${j} is less than 4`);
+        j++;
+      } while (j < 4);
+    </script>
+  </body>
+</html>
