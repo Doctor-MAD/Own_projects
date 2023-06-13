@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM understandig by Jose Portilla</title>
+    <style></style>
+  </head>
+
+  <body>
+
+    <h2 class="headings" id="item1">Hover over me</h2>
+    <h2 class="headings" id="item2">click on me </h2>
+
+    <h2 class="headings" id="item3"> double click on me</h2>
+
+
+    <script>
+      // These are some important document attributes
+      document.URL;
+      document.body;
+      document.head;
+      document.links;
+
+      // Random color generator
+      
+        // listing for events look like this:
+        // myvariable.addEventListener(event,func);
+
+        // var head= document.querySelector('h1');
+        // head.addEventListener("click", changeColor);
+        // go to mozilla - MDN for more events in javascript
+    
+        let headone= document.querySelector("#item1");
+        let headtwo= document.querySelector("#item2");
+        let headthree= document.querySelector("#item3");
+
+        headone.addEventListener("mouseover", function(){
+            headone.textContent="Mouse currently Over";
+            headone.style.backgroundColor ="tomato";
+        })
+        headone.addEventListener("mouseout", function(){
+            headone.textContent="Mouse currently out";
+            headone.style.backgroundColor = "initial";
+        })
+
+
+    </script>
+  </body>
+</html>

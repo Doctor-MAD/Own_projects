@@ -7,6 +7,7 @@
   </head>
   <body>
     <div class="container">This is container</div>
+        <span id="time"></span>
 
     <script>
       // Why we use:
@@ -15,6 +16,25 @@
       // clearTimeout:- save above variable in timeout or some variable and then enter that id in this function
 
       //    Syntax: setTimeout(function, time_in_miliseconds, param1,param2);
+
+    //   function greet(name, byeText){
+    //     console.log("Hey, Good Morning "+ name+ byeText)
+    //   };
+
+    //   function name should be used without paranthesis , we don't have to call it.
+    //    timeOut=setTimeout(greet, 3000, "AKash.", " Welcome to Google.")
+      
+    //    clearTimeout(timeOut)
+    // myInterval=setInterval(greet, 2000, "Akash", "You are official part of Google now.");
+    // clearInterval(myInterval);
+
+    function displayTime(){
+        time= new Date();
+        document.getElementById("time").innerHTML=time;
+    }
+    setInterval(displayTime, 1000);
+
+      
     </script>
   </body>
 </html>

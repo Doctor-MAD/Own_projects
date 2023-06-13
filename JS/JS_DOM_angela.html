@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding DOM in Javascript</title>
+    <style>
+        .huge{
+            font-size: 10rem;
+            color: red;
+            font-weight: bold;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Hello</h1>
+    <input type="checkbox" name="" id="">
+
+    <button class="btn"> Click Me</button>
+
+    <ul>
+        <li class="list">
+            <a href="https://www.google.com"> Google</a>
+        </li>
+        <li class="list"> Second</li>
+        <li class="list" id="thirdLi">Third</li>
+    </ul>
+
+    <script>
+    //   alert("Welcome to my website.");
+    
+    // let heading = document.firstElementChild.lastElementChild.firstElementChild;
+    // heading.innerHTML="Good Bye";
+
+    // heading.style.color = "red"; 
+    
+    // document.querySelector("input").click();
+
+    // document.getElementById("thirdLi").innerHTML= "Akash";
+
+    // document.getElementsByTagName("li")[1].style.backgroundColor= "tomato";
+    // document.getElementsByTagName("li")[1].innerHTML= "I am awesome";
+    document.querySelector("h1").classList.toggle("huge");
+
+    document.querySelector("a").attributes;
+    document.querySelector("a").getAttribute("href");
+    document.querySelector("a").setAttribute("href", "https://www.bing.com/");
+    console.dir(document);
+
+
+   
+
+    </script>
+  </body>
+</html>
