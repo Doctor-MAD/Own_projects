@@ -1,0 +1,16 @@
+{
+  "name": "codewithakash",
+  "version": "1.0.0",
+  "description": "created while learning node with express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --legacy-watch ./app  ./bin/www "
+  },
+  "author": "Akash Mewada",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}

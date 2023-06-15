@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // console.log(this)
+
+        // function hello(){
+        //     console.log(this)
+        // };
+        // hello();
+
+        // hello = ()=>{
+        //     console.log(this)
+        // }
+        // hello()
+
+        // const myInfo = {
+        //     name: "Akash",
+        //     age: "31",
+        //     hobby: "Gaming",
+        //     profession: "Software Developer",
+        //     info: function(){
+        //         const arrowFunction =() => {
+        //         console.log(`My name is ${this.name} and my age is ${this.age}. I love to play ${this.hobby} and by profession I am ${this.profession}`);
+        //     };
+        //         arrowFunction();
+        //     }
+        // };
+        //    myInfo.info();
+
+        // const myInfo = {
+        //     name: "Akash",
+        //     age: "31",
+        //     hobby: "Gaming",
+        //     profession: "Software Developer",
+        //     info: function(){
+        //        return (`My name is ${this.name} and my age is ${this.age}. I love to play ${this.hobby} and by profession I am ${this.profession}`)
+        //     }
+        // };
+        //     console.log(myInfo.info())
+        
+        // With use of constructor, understanding of "This" keyword
+        // function myInfo(name,age,hobby,profession){
+        //     this.name = name;
+        //     this.age = age;
+        //     this.hobby = hobby;
+        //     this.profession = profession
+        //     this.greet= function(){
+        //         console.log(`My name is ${this.name} and my age is ${this.age}. I love to play ${this.hobby} and by profession I am ${this.profession}`)
+        //     }
+        // }
+        
+        // const akash = new myInfo("Akash", "31", "Gaming", "Software Developer");
+        // akash.greet()
+
+        const myInfo = {
+            name: "Akash",
+            age: "31",
+            hobby: "Gaming",
+            profession: "Software Developer",
+            info: () => {
+                console.log(`My name is ${this.name} and my age is ${this.age}. I love to play ${this.hobby} and by profession I am ${this.profession}`);
+            }
+        };
+
+        myInfo.info();
+
+
+
+    </script>
+</body>
+</html>
