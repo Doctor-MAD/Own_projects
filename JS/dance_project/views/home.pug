@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+  script(src='../static/index.js')
+block style
+    style
+        include ../static/style.css 
+  
+
+block content
+    section#introSection 
+        div Welcome to D-MAD's Dance Academy
+        div.secondDiv Learn Salsa, Bollywood, Jazz and more...
+
+    section#missionSection 
+        h2 Dance Forms
+        div 
+            div.card 
+                h3 Hip-Hop
+                div.card-box
+                    div.card-img
+                        img(src="../static/1.png")
+            div.card 
+                h3 Contemporary
+                div.card-box
+                    div.card-img
+                        img(src="../static/2.png")
+            div.card 
+                h3 Salsa
+                div.card-box
+                    div.card-img
+                        img(src="../static/3.png")
+    
+    section#sponserSection 
+        h2 Our Pricing
+        div#sponsors
+            div.spprice
+                h3 Beginner
+                h4 Rs. 10000/Year
+            div.spprice
+                h3 Intermediate
+                h4 Rs. 15000/Year
+            div.spprice
+                h3 Master
+                h4 Rs. 20000/Year

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#{title}</title>
+    style
+        include ../static/style.css
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li> <a href="/"> Home </a> </li>
+            <li> <a href="/"> Contact Us</a> </li>
+            <li> <a href="/"> About</a> </li>
+        </ul>
+    </nav>
+    <div class="container">
+    
+        <h2> Get premium gym membership in your area only for Rs.5000</h2>
+        <!-- <p> #{content}</p>
+        |#{content} -->
+  
+        <form action="/" method="post">
+            
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            
+            <input type="text" name="age" id="age" placeholder="Enter your age"> 
+            
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender"> 
+            
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter Your Address"></textarea>
+            <button class="btn"  type="submit">Submit</button>
+        </form>
+
+    </div>
+        
+
+</body>
+</html>
