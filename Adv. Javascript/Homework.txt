@@ -1,0 +1,55 @@
+// Homework :
+
+Date: 5/7/2023 , Lecture: String and its methods
+// 1. Create a method which takes 2 array, one for first name and 2nd for surname and return array of full name
+
+// 2. Create a method to move array of element bt n number of places
+    // Example: arr = [1,2,3,4]
+    // if n = 1 => [4,1,2,3]
+    // if n = 2 => [3,4,1,2]
+
+// 3. Create a function which takes 2 param , 1 param => array of numbers  2nd param => type of operations
+    // if value is number then return new array with each item multiple of the number
+    // if filter then return only odd numbers from the array 
+
+
+4. Know the difference between complier language and interpreted language?
+5. Know the difference between High level language and low level language?
+6. What is Javascript Engine ? How it works ?
+    -  It was designed only for browser initially.
+    -  Each browser has its own JS engine ( Chrome -> V8, Mozilla -> spidermonkey, IE -> chakra)
+    -  It is piece of code which reads and execute the JS file 
+
+7. What abstract syntax tree (AST)?
+
+8. What is lexical environnement in Javascript ?
+
+9. Window is global object, If any variable is not defined at any scope then it will get added to window (or Global) Object
+
+10. After creating function if we don't call it in JS , then interpreter will not read code written in function so whatever variables we have defined , all will be shown as undefined.
+
+11. Var/Let/Const 
+    - Var can be redeclare and reassigned
+    - Let can be reassigned but not redeclare
+    - Const can't be redeclare and reassigned
+    - Var scope is limited to function or global and Let/Const are block scoped (They can't be accessed outside curly braces) 
+    - We can't access variable created by let and const before it's declaration
+    - when we define with Var or no prefix, value will be added to window object and can be access from any file but when you define with let/ const then it can be accessed only in that script, they will not be added to window object.
+
+12. Hoisting:- 
+
+    - Javascript will look for variable declaration and function declaration without executing single line of code, in which Variables will be declared as undefined and function will be declared as it is whole function. This is known as hoisting.
+    - With Var, Hoisting can be possible.
+    - With Let and Const -> In javascript, we have temporal dead zone which restrict us to use variables without declaring them first. Javascript actually able to access them as hoisting but user can't access that and it will show reference error. 
+
+13. temporal Dead zone ?
+    - It is the time since when this let or const variable hoisted and till the program reaches its declaration place or initialization step ,
+    - JS will raise reference error for accessing variables defined by let and const before it's declaration.
+
+Homework on 13th July 2023:-
+1. What is hoisting?
+2. What is temporal dead zone?
+3. Let, Var and Const difference
+4. Lexical scope & scope chaining 
+5. Closures
+5. Application of closures 

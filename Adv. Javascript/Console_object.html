@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        // to use time and timeEnd, Name in paranthesis should be same for both.
+        console.time("Start")
+        console.log("This is just a log.")
+        console.error("This is to show error")
+        // if condition is true then no show but condition is false then only it will show some messages
+        console.assert(555<55);
+        const obj = {
+            a : 1,
+            b : 2,
+            c : 3,
+        }
+        console.table(obj);
+        console.warn("Work hard ow you will get a job after lot of time.")
+        console.info("Thisi is just information")
+        console.timeEnd("Start");
+    </script>
+</body>
+</html>

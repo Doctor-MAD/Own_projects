@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just for Practice</title>
+</head>
+<body>
+    <script>
+        let runAgain = true;
+        const CanDrive = (age) =>{
+            return age >= 18? true: false;
+        };
+
+        while (runAgain){
+            let age = prompt("Enter Your Age- ");
+            age = Number.parseInt(age);
+            if (canDrive(age)){
+                alert("Yes you can drive");
+                document.write("Yes You can drive")
+            } else if(age<0){
+                console.error("Enter valid age: ")
+            } else {
+                alert("No you can't drive a car");
+            }
+            runAgain = confirm("Do you want to enter again?")
+        }
+    </script>
+</body>
+</html>

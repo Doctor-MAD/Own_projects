@@ -1,0 +1,24 @@
+// When we compare primitive data types, JS will compare values but when we compare non-primitive data types , JS will compare the address(reference). == and === will work accordingly.
+// Generally, methods you can access for non-primitive data types only but string is being primitive and still behaves like non-primitive. While using methods, JS will convert string to object (key:value)
+// then access all methods.
+--> How JS store Data:- 
+1. Primitive - It stores the data into stack and adds the reference (mem. location) of that data to the variable
+2. Non-Primitive - It stores the data into heap and its address will stored in stack as a pointer and the variable refers to the pointer.
+
+This is the reason , 
+--> when we compare two simple variable, with same values, with primitive data types which are stored in stack result in true
+--> But when we compare two variable with same values and with non-primitive data types which are stored in heap and their address is stored in stack with the help of variable, we get result as false even though value are same but their address will be different. 
+
+Execution Context :- Everything in Javascript happens inside an Execution Context.
+
+* Normal Function Vs Arrow Function :-
+
+    Normal Function:-
+        Function someThing(arr){
+            const result = arr.map()
+            const result2 = result.filter()
+            return result2
+        }
+
+    Arrow Function:= 
+        const someThing = (arr, anotherParam) => arr.map().filter()
